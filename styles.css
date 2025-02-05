@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: visible;
 }
 
 ul {
@@ -18,21 +19,25 @@ ul {
   padding-top: 15px;
   padding-left: 15px;
   font-weight: bold;
+  color: white;
 }
 
 .header {
-  background-color: lightgoldenrodyellow;
+  background-color: white;
   grid-column: 2/4;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .3);
+  position: relative;
+  z-index: 1;
 }
 
 .projects {
-  background-color: lightpink;
+  background-color: rgb(228, 224, 225);
   grid-row: 2/5;
   grid-column-start: 2;
 }
 
 .sidebar {
-  background-color: lightgrey;
+  background-color: rgb(228, 224, 225);
   grid-row: 2/5;
   grid-column-start: 3;
 }
@@ -47,17 +52,36 @@ ul {
 /* Dashboard */
 #dash-title {
   font-size: 25px;
-  color: white;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap:  10px;
+}
+
+.dashboard-img path, .dashboard-img {
+  width: 50px;
+  fill: white;
 }
 
 .user-btns, .help-btns {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   font-size: 20px;
-  color: white;
+  fill: white;
 }
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.li-img {
+  width: 30px;
+}
+
+/* Header */
 
 
 
