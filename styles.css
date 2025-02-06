@@ -45,6 +45,9 @@ ul {
   background-color: rgb(220, 229, 235);
   grid-row: 2/5;
   grid-column-start: 3;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 40px;
 }
 
 .container {
@@ -154,4 +157,23 @@ li {
   bottom: 0;
   right: 0;
   margin: 10px;
+}
+
+/* Sidebar */
+.announcement-title, .trending-title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.sidebar-container {
+  display: grid;
+  gap: 50px;
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.announcement-card, .trending-card {
+  background-color:rgb(230, 178, 83);
+  height: 255px;
+  border-radius: 15px;
 }
